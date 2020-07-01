@@ -1,5 +1,4 @@
 import { pingPong } from './../src/ping-pong.js';
-import { TestScheduler } from 'jest';
 
 describe('pingPong', () => {
 
@@ -18,4 +17,5 @@ describe('pingPong', () => {
     test('should replace numbers divisible by fifteen(15) with the string "ping-pong"', () => {
         expect(pingPong(15)).toEqual([1,2,'ping',4,'pong','ping',7,8,'ping','pong',11,'ping',13,14,'ping-pong']);
     });
+
 });
